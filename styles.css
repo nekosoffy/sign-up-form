@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'alex_brushregular';
+    src: url('./fonts/alexbrush-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -7,12 +14,17 @@
     line-height: calc(1em + 0.5rem);
 }
 
+:root {
+    font-size: 6.25%;
+}
+
 body {
     -webkit-font-smoothing: antialiased;
     display: flex;
     justify-content: center;
     background-color: rgb(14, 14, 14);
-    overflow: hidden;
+    font-size: 16rem;
+
 }
 
 img, picture, video, canvas, svg {
@@ -32,11 +44,50 @@ p, h1, h2, h3, h4, h5, h6 {
     isolation: isolate;
 }
 
-#logo {
+#left_side {
+    position: relative;
     width: 28%;
+    height: 100%;
+}
+
+.logo {
+    width: 15%;
+    margin-right: 20px;
+    transform: rotate(10deg);
+}
+
+#left_side div:first-of-type {
+    font-family: "alex_brushregular";
+    font-size: 45rem;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(150, 149, 148, 0.5);
+    top:150px;
+    width: 100%;
+    padding: 10px;
+}
+
+.credits {
+    background-color: rgba(14, 14, 14, 0.3);
+    font-size: 13rem;
+    color: white;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 15px;
+    text-align: center;
 }
 
 #main {
     background-color: white;
     width: 32%
+}
+
+a {
+    color:white;
 }
