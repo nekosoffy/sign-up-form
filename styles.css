@@ -130,7 +130,8 @@ p, h1, h2, h3, h4, h5, h6 {
     width: 80%;
 }
 
-p + p, #main div:last-of-type > p { 
+p + p, label,
+#main div:last-of-type > p { 
     margin-top: var(--paragraph-spacing); 
 }
 
@@ -143,7 +144,6 @@ label {
     text-transform: uppercase;
     font-size: min(2vw, 13rem);
     font-weight: bold;
-    margin-top: 2.1vw;
 }
 
 input {
@@ -156,6 +156,7 @@ form {
     display: flex;
     justify-content: space-between;
     width: 65%;
+    margin-top: 1px;
 }
 
 button {
