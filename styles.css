@@ -6,14 +6,6 @@
 }
 
 @font-face {
-    font-family: 'allerbold';
-    src: url('aller_bd-webfont.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
     font-family: 'allerregular';
     src: url('./fonts/aller_rg-webfont.woff2') format('woff2');
     font-weight: normal;
@@ -63,29 +55,37 @@ p, h1, h2, h3, h4, h5, h6 {
 
 #left_side {
     position: relative;
-    max-width: 40%;
-    height: 100%;
+    height: 100vh;
+    width: 30vw;
+    overflow: hidden;
 }
 
 .logo {
-    width: 14%;
+    width: 12%;
     min-width: 50px;
-    margin-right: 20px;
+    margin-right: 15px;
     transform: rotate(10deg);
+    margin-top: -15px;
+}
+
+#left_side > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 #left_side div:first-of-type {
     font-family: "alex_brushregular", sans-serif;
-    font-size: min(5vw, 50rem);
+    font-size: min(5vw, 65rem);
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     background-color: rgba(150, 149, 148, 0.5);
-    top: 25%;
+    top: 20%;
     width: 100%;
-    padding: 10px;
+    padding: 20px 10px 10px;
 }
 
 #left_side div:last-of-type {
@@ -97,13 +97,14 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-right: auto;
     left: 0;
     right: 0;
-    bottom: 2%;
+    bottom: 1%;
     text-align: center;
+    padding: 2px;
 }
 
 #main {
     background-color: white;
-    width: 32%
+    width: 70vw;
 }
 
 a {
