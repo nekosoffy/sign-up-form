@@ -19,7 +19,6 @@
 
 * {
     margin: 0;
-    line-height: calc(1em + 0.5rem);
 }
 
 :root {
@@ -103,8 +102,14 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 #main {
-    background-color: white;
+    background-color: whitesmoke;
     width: 70vw;
+}
+
+.introduction {
+    margin: 3.6vw 0 3vw 2vw;
+    font-size: min(2vw, 25rem);
+    width: 80%;
 }
 
 a {
