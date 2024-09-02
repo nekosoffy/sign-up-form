@@ -5,6 +5,22 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'allerbold';
+    src: url('aller_bd-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'allerregular';
+    src: url('./fonts/aller_rg-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -23,6 +39,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: rgb(14, 14, 14);
+    font-family: "allerregular";
     font-size: 16rem;
 
 }
@@ -46,40 +63,41 @@ p, h1, h2, h3, h4, h5, h6 {
 
 #left_side {
     position: relative;
-    width: 28%;
+    max-width: 40%;
     height: 100%;
 }
 
 .logo {
-    width: 15%;
+    width: 14%;
+    min-width: 50px;
     margin-right: 20px;
     transform: rotate(10deg);
 }
 
 #left_side div:first-of-type {
-    font-family: "alex_brushregular";
-    font-size: 45rem;
+    font-family: "alex_brushregular", sans-serif;
+    font-size: min(5vw, 50rem);
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     background-color: rgba(150, 149, 148, 0.5);
-    top:150px;
+    top: 25%;
     width: 100%;
     padding: 10px;
 }
 
-.credits {
-    background-color: rgba(14, 14, 14, 0.3);
-    font-size: 13rem;
+#left_side div:last-of-type {
+    background-color: rgba(14, 14, 14, 0.4);
+    font-size: 12rem;
     color: white;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
-    bottom: 15px;
+    bottom: 2%;
     text-align: center;
 }
 
