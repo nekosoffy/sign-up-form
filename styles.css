@@ -23,6 +23,8 @@
 
 :root {
     font-size: 6.25%;
+    --left-spacing: 2vw;
+    --paragraph-spacing: 1.5vw;
 }
 
 body {
@@ -32,7 +34,6 @@ body {
     background-color: rgb(14, 14, 14);
     font-family: "allerregular";
     font-size: 16rem;
-
 }
 
 img, picture, video, canvas, svg {
@@ -109,24 +110,29 @@ p, h1, h2, h3, h4, h5, h6 {
     width: 70vw;
 }
 
+#main > div {
+    padding: var(--left-spacing);
+}
+
 #main > div:first-child {
     color: rgb(14, 14, 14);
 }
 
-.form_wrapper {
+#main > div:nth-child(2) {
     background-color: white;
     color: rgb(37, 39, 83);
     box-shadow: 0 4px 10px -2px gray;
-    padding-bottom: 10px;
+    padding-top: 1vw;
 }
-
 
 #main p {
     font-size: min(2vw, 25rem);
     width: 80%;
 }
 
-p + p { margin-top: 20px; }
+p + p, #main div:last-of-type > p { 
+    margin-top: var(--paragraph-spacing); 
+}
 
 a {
     color:white;
@@ -135,9 +141,9 @@ a {
 label {
     display: block;
     text-transform: uppercase;
-    margin-top: 20px;
     font-size: min(2vw, 13rem);
     font-weight: bold;
+    margin-top: 2.1vw;
 }
 
 input {
@@ -147,7 +153,6 @@ input {
 }
 
 form {
-    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     width: 65%;
@@ -164,9 +169,14 @@ button {
     box-shadow: 0 4px 10px -2px gray;
 }
 
+button:active {
+    background-color: rgb(70, 52, 38);
+    transform: scale(0.98);
+    box-shadow: none;
+}
+
 #main div:last-of-type > p {
     font-size: min(2.5vw, 18rem);
-    margin-top: 20px;
 }
 
 span {
