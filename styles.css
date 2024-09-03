@@ -121,6 +121,7 @@ p, h1, h2, h3, h4, h5, h6 {
 #main > div:first-child {
     color: rgb(14, 14, 14);
     font-size: min(2vw, 25rem);
+    width: 85%;
 }
 
 #main > div:nth-child(2) {
@@ -161,6 +162,7 @@ input {
     height: 35px;
     border-radius: 4px;
     border: 1px solid gray;
+    display: block;
 }
 
 input:user-valid {
