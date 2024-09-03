@@ -120,6 +120,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 #main > div:first-child {
     color: rgb(14, 14, 14);
+    font-size: min(2vw, 25rem);
 }
 
 #main > div:nth-child(2) {
@@ -129,13 +130,17 @@ p, h1, h2, h3, h4, h5, h6 {
     padding-top: 1vw;
 }
 
-#main p {
+#form-call-text {
     font-size: min(2vw, 25rem);
-    width: 80%;
 }
 
 p + p, #main div:last-of-type > p { 
     margin-top: var(--paragraph-spacing); 
+}
+
+#required-notice {
+    font-size: min(2vw, 10rem);
+    color: rgba(14, 14, 14);
 }
 
 label {
@@ -144,6 +149,10 @@ label {
     font-size: min(2vw, 13rem);
     font-weight: bold;
     margin-top: 2vw;
+}
+
+#form > div > label:first-of-type {
+    margin-top: 1vw;
 }
 
 input {
