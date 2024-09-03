@@ -49,7 +49,7 @@
                     <input type="text" id="last-name" name="last-name" maxlength="256" required />
 
                     <label for="phone" aria-label="phone">Phone number <span aria-label="required">*</span></label>
-                    <input type="tel" id="phone" name="phone" pattern="([0-9]{10}) | ([0-9]{11})" minlength="10" maxlength="11" required />
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10,11}" minlength="10" maxlength="11" required />
 
                     <label for="confirm-password" aria-label="confirm password">Confirm password <span aria-label="required">*</span></label>
                     <input type="confirm-password" id="confirm-password" name="confirm-password" minlength="8" maxlength="128" placeholder="Minimum of 8 characters" required />
