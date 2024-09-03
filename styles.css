@@ -139,7 +139,7 @@ p + p, #main div:last-of-type > p {
 }
 
 #required-notice {
-    font-size: min(2vw, 10rem);
+    font-size: min(2vw, 11rem);
     color: rgba(14, 14, 14);
 }
 
@@ -151,7 +151,7 @@ label {
     margin-top: 2vw;
 }
 
-#form > div > label:first-of-type {
+#form label:first-of-type {
     margin-top: 1vw;
 }
 
