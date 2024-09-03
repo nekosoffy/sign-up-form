@@ -102,6 +102,10 @@ p, h1, h2, h3, h4, h5, h6 {
     padding: 2px;
 }
 
+#left_side a {
+    color:white;
+}
+
 #main {
     display: flex;
     flex-direction: column;
@@ -134,10 +138,6 @@ p + p, #main div:last-of-type > p {
     margin-top: var(--paragraph-spacing); 
 }
 
-a {
-    color:white;
-}
-
 label {
     display: block;
     text-transform: uppercase;
@@ -150,12 +150,32 @@ input {
     width: 20vw;
     margin-top: 2px;
     height: 35px;
+    border-radius: 4px;
+    border: 1px solid gray;
+}
+
+input:valid {
+    border: 1px solid rgb(67, 194, 84); 
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input:focus {
+    border: 2px solid rgb(59, 74, 209);
+    box-shadow: 0 4px 10px -2px gray;
+    outline: none;
 }
 
 form {
     display: flex;
     justify-content: space-between;
     width: 68%;
+}
+
+#main div:last-of-type > p {
+    font-size: min(2.5vw, 18rem);
 }
 
 button {
@@ -175,10 +195,14 @@ button:active {
     box-shadow: none;
 }
 
-#main div:last-of-type > p {
-    font-size: min(2.5vw, 18rem);
+button:hover {
+    background-color: rgb(70, 52, 38);
 }
 
-span {
-    color: rgb(119, 89, 66);
+#main a {
+    color:rgb(119, 89, 66);
+}
+
+a, a:hover, a:active {
+    text-decoration: none;
 }
