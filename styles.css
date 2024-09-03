@@ -154,11 +154,11 @@ input {
     border: 1px solid gray;
 }
 
-input:valid {
+input:user-valid {
     border: 1px solid rgb(67, 194, 84); 
 }
 
-input:invalid {
+input:user-invalid {
     border: 1px solid red;
 }
 
