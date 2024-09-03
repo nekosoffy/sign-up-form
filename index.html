@@ -35,24 +35,38 @@
             </p>
             <form id="form">
                 <div>
-                    <label for="first-name" aria-label="first name">First name <span aria-label="required">*</span></label>
-                    <input type="text" id="first-name" name="first-name" maxlength="256" required />
+                    <label for="first-name" aria-label="first name">
+                        <span>First name</span> <strong><span aria-label="required">*</span></strong>
+                        <input type="text" id="first-name" name="first-name" maxlength="256" required />
+                    </label>
 
-                    <label for="email" aria-label="email">Email <span aria-label="required">*</span></label>
-                    <input type="email" id="email" name="email" maxlength="254" placeholder="cheese@inc.com" required />
+                    <label for="last-name" aria-label="last name">
+                        <span>Last name</span> <strong><span aria-label="required">*</span></strong>
+                        <input type="text" id="last-name" name="last-name" maxlength="256" required />
+                    </label>
 
-                    <label for="password" aria-label="password">Password <span aria-label="required">*</span></label>
-                    <input type="password" id="password" name="password" minlength="8" maxlength="128" placeholder="Minimum of 8 characters" required />
-                </div>
-                <div>
-                    <label for="last-name" aria-label="last name">Last name <span aria-label="required">*</span></label>
-                    <input type="text" id="last-name" name="last-name" maxlength="256" required />
+                    <label for="email" aria-label="email">
+                        <span>Email</span> <strong><span aria-label="required">*</span></strong>
+                        <input type="email" id="email" name="email" maxlength="254" required />
+                    </label>
 
-                    <label for="phone" aria-label="phone">Phone number <span aria-label="required">*</span></label>
-                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10,11}" minlength="10" maxlength="11" required />
+                    <label for="phone" aria-label="phone">
+                        <span>Phone number</span> <strong><span aria-label="required">*</span></strong>
+                        <p>Must have between 10 and 11 digits. No letters or symbols.</p>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10,11}" minlength="10" maxlength="11" required />
+                    </label>
 
-                    <label for="confirm-password" aria-label="confirm password">Confirm password <span aria-label="required">*</span></label>
-                    <input type="password" id="confirm-password" name="confirm-password" minlength="8" maxlength="128" placeholder="Minimum of 8 characters" required />
+                    <label for="password" aria-label="password">
+                        <span>Password</span> <strong><span aria-label="required">*</span></strong>
+                        <p>Must have at least 8 characters.</p>  
+                        <input type="password" id="password" name="password" minlength="8" maxlength="128" required />
+                    </label>
+
+                    <label for="confirm-password" aria-label="confirm password">
+                        <span>Confirm password</span> <strong><span aria-label="required">*</span></strong>
+                        <p>Must have at least 8 characters.</p>
+                        <input type="password" id="confirm-password" name="confirm-password" minlength="8" maxlength="128" required />
+                    </label>
                 </div>
             </form>
         </div>

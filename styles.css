@@ -139,30 +139,39 @@ p + p, #main div:last-of-type > p {
     margin-top: var(--paragraph-spacing); 
 }
 
-#required-notice {
+#required-notice,
+label > p {
     font-size: min(2vw, 11rem);
     color: rgba(14, 14, 14);
+    text-transform: none;
+    font-weight: normal;
 }
 
-label {
-    display: block;
-    text-transform: uppercase;
-    font-size: min(2vw, 13rem);
+label span {
     font-weight: bold;
-    margin-top: 2vw;
+    font-size: min(2vw, 13rem);
+    text-transform: uppercase;
 }
 
-#form label:first-of-type {
+form div {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    gap: 1.3vw 5vw;
+    width: 80%;
+}
+
+form label:first-of-type {
     margin-top: 1vw;
 }
 
 input {
+    display: block;
     width: 20vw;
     margin-top: 2px;
     height: 35px;
     border-radius: 4px;
     border: 1px solid gray;
-    display: block;
 }
 
 input:user-valid {
@@ -177,12 +186,6 @@ input:focus {
     border: 2px solid rgb(59, 74, 209);
     box-shadow: 0 4px 10px -2px gray;
     outline: none;
-}
-
-form {
-    display: flex;
-    justify-content: space-between;
-    width: 68%;
 }
 
 #main div:last-of-type > p {
